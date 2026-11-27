@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page">#050906</color>
+    <color name="bg_start">#212C1D</color>
+    <color name="bg_end">#09110E</color>
+    <color name="ivory">#F0F0DE</color>
+    <color name="muted">#9EAB94</color>
+    <color name="accent">#C4D685</color>
+    <color name="holiday_idle">#C2F0F0DE</color>
+    <color name="line">#429EAB94</color>
+    <color name="border">#26F0F0DE</color>
+    <color name="pill">#29C4D685</color>
+    <color name="pill_off">#0FF0F0DE</color>
+    <color name="chip">#0AF0F0DE</color>
+    <color name="ink">#12170F</color>
+    <color name="icon_bg">#09110E</color>
+</resources>

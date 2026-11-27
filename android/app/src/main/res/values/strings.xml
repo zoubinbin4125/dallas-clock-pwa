@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">达拉斯时间</string>
+    <string name="widget_desc_compact">小尺寸，适合 Z Fold 封面屏。显示达拉斯时间、上班状态和倒计时。</string>
+    <string name="widget_desc_wide">宽尺寸，适合内屏。显示达拉斯时间、倒计时和下一个美国联邦假日。</string>
+    <string name="eyebrow">DALLAS · 达拉斯</string>
+    <string name="subtitle">上班 / 下班倒计时</string>
+    <string name="about">节假日说明</string>
+    <string name="hours_note">周一至周五 · 08:30–17:30</string>
+    <string name="footer">时间按达拉斯当地时区 America/Chicago 计算，自动在 CST / CDT 之间切换。联邦假日仅作日历标注，不代表公司是否放假。</string>
+    <string name="alarm_banner">小组件要每分钟刷新，需要允许「闹钟和提醒」。点此打开设置。</string>
+    <string name="unit_hour">小时</string>
+    <string name="unit_minute">分</string>
+    <string name="unit_second">秒</string>
+    <string name="about_title">美国联邦假日</string>
+    <string name="about_body">显示联邦假日及周末调休日，周末另作标注。不代表公司、银行、学校或商店的实际营业安排。\n\n上班倒计时按周一至周五 08:30–17:30 计算；联邦假日当天若仍是工作日，倒计时照常走，不代表公司放假。\n\n时区：America/Chicago。自动切换 CST / CDT，并按达拉斯当地日期判断假日。规则与 Mac 版 2.2.0、网页版一致。\n\n来源：U.S. Office of Personnel Management</string>
+    <string name="about_link">https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/</string>
+    <string name="about_ok">好</string>
+    <string name="widget_preview_compact_holiday">感恩节 · 12天</string>
+    <string name="widget_preview_wide_date">2026年11月26日 星期四</string>
+    <string name="widget_preview_countdown">距下班 9小时00分</string>
+    <string name="widget_preview_next">下个假日：圣诞节（29 天后）</string>
+</resources>
