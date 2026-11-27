@@ -18,6 +18,7 @@ const els = {
   hours: document.getElementById("hours"),
   minutes: document.getElementById("minutes"),
   seconds: document.getElementById("seconds"),
+  countdownCn: document.getElementById("countdown-cn"),
   countdownEn: document.getElementById("countdown-en"),
   upcoming: document.getElementById("upcoming"),
 };
@@ -45,7 +46,8 @@ function render(now = new Date()) {
   els.hours.textContent = String(hms.hours);
   els.minutes.textContent = pad2(hms.minutes);
   els.seconds.textContent = pad2(hms.seconds);
-  els.countdownEn.textContent = `${s.workCountdownCN}  ·  ${s.workCountdownEN}`;
+  els.countdownCn.textContent = s.workCountdownCN;
+  els.countdownEn.textContent = s.workCountdownEN;
   els.upcoming.textContent = `下个假日：${s.upcomingHolidayCN}（${s.daysUntilHoliday} 天后）`;
 
   document.title = `${s.time} ${s.periodEN} · ${els.countdownLabel.textContent} ${hms.text}`;

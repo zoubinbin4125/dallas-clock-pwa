@@ -1,4 +1,4 @@
-const CACHE = "dallas-clock-v1";
+const CACHE = "dallas-clock-v2";
 const ASSETS = [
   "./",
   "./index.html",
