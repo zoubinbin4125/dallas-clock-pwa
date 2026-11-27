@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#212C1D" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="达拉斯时间" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description" content="上班/下班倒计时，显示达拉斯（美国中部）时间与美国联邦假日。" />
+    <title>达拉斯时间</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <main class="card">
+        <header class="topbar">
+          <div class="brand">
+            <div class="eyebrow">DALLAS · 达拉斯</div>
+            <div class="subtitle">上班 / 下班倒计时</div>
+          </div>
+          <button type="button" class="info-btn" id="open-about">节假日说明</button>
+        </header>
+
+        <div class="grid">
+          <section class="time-block">
+            <div class="clock" id="time">--:--:--</div>
+            <div class="period" id="period">—</div>
+          </section>
+
+          <section class="date-block">
+            <div class="date-line" id="date">—</div>
+            <div class="weekday" id="weekday">—</div>
+            <div class="holiday" id="holiday">—</div>
+            <div class="china" id="china">—</div>
+          </section>
+
+          <section class="count-block">
+            <div class="status-row">
+              <span class="pill off" id="status">—</span>
+            </div>
+            <div class="countdown-label" id="countdown-label">距上班</div>
+            <div class="digits" aria-hidden="true">
+              <span class="num" id="hours">0</span>
+              <span class="colon">:</span>
+              <span class="num" id="minutes">00</span>
+              <span class="colon">:</span>
+              <span class="num" id="seconds">00</span>
+            </div>
+            <div class="units" aria-hidden="true">
+              <span>小时</span>
+              <span></span>
+              <span>分</span>
+              <span></span>
+              <span>秒</span>
+            </div>
+            <div class="countdown-en" id="countdown-en">—</div>
+            <div class="hours-note">周一至周五 · 08:30–17:30</div>
+            <div class="upcoming" id="upcoming">—</div>
+          </section>
+        </div>
+
+        <p class="footer-note">
+          时间按达拉斯当地时区 America/Chicago 计算，自动在 CST / CDT 之间切换。联邦假日仅作日历标注，不代表公司是否放假。
+        </p>
+        <div class="sr-only" id="live" aria-live="polite"></div>
+      </main>
+    </div>
+
+    <dialog class="about" id="about">
+      <h2>美国联邦假日</h2>
+      <p>显示联邦假日及周末调休日，周末另作标注。不代表公司、银行、学校或商店的实际营业安排。</p>
+      <p>上班倒计时按周一至周五 08:30–17:30 计算；联邦假日当天若仍是工作日，倒计时照常走，不代表公司放假。</p>
+      <p>时区：America/Chicago。自动切换 CST / CDT，并按达拉斯当地日期判断假日。</p>
+      <p>
+        来源：U.S. Office of Personnel Management<br />
+        <a href="https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/" target="_blank" rel="noopener noreferrer">opm.gov 联邦假日说明</a>
+      </p>
+      <div class="actions">
+        <button type="button" id="close-about">好</button>
+      </div>
+    </dialog>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

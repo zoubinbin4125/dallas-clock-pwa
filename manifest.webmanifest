@@ -1,0 +1,35 @@
+{
+  "id": "/dallas-clock-pwa/",
+  "name": "达拉斯时间",
+  "short_name": "达拉斯时间",
+  "description": "上班/下班倒计时，显示达拉斯（美国中部）时间与美国联邦假日。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#09110E",
+  "theme_color": "#212C1D",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
